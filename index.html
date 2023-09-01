@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Motivation</title>
+    <style>@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+    :root {
+      --navyblue:#00bfff;
+      --yello:#ffff00;
+      --pink:#ff0080	;
+      --purple500: #281154;
+      --purple300: #270082;
+      --purple600: #992191;
+      --red600: #dc0000;
+      --body: #f9f6ff;
+      --max-width: 1200px;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html,
+    body {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      line-height: 1.4;
+      scroll-behavior: smooth;
+    }
+    
+    section {
+      scroll-margin: 50px;
+    }
+    ul {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      background-color: var(--purple500);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      padding: 20px 0;
+    }
+    .logo {
+      font-size: 32px;
+      font-weight: 600;
+    }
+    
+    button {
+      padding: 10px 15px;
+      border: none;
+      transition: 0.2s ease-in-out;
+    }
+    button:hover {
+      transition: 0.2s ease-in-out;
+      opacity: 0.8;
+    }
+    nav ul {
+      display: flex;
+      gap: 20px;
+    }
+    
+    nav ul li {
+      border-bottom: 2px solid transparent;
+      transition: 0.2s ease-in;
+    }
+    nav ul li:hover {
+      border-bottom: 2px solid white;
+      transition: 0.2s ease-in;
+    }
+    .hero-section {
+      background-image:url( https://img.freepik.com/free-photo/man-jumping-impossible-possible-cliff-sunset-background-business-concept-idea_1323-266.jpg?size=626&ext=jpg&ga=GA1.1.1258577565.1659794013&semt=sph);
+       height: 150vh;
+      width: 100vw;
+      display: grid;
+      color: rgb(238, 236, 131);
+      place-items: center;
+      text-align: center;
+    }
+    
+    .hero-section .container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .hero-section h1 {
+      font-size: 96px;
+    }
+    .hero-section h3 {
+      font-size: 32px;
+    }
+    
+    .music-section {
+      padding-top: 50px;
+      background: var(--purple500);
+    }
+    .music-section .container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content:center;
+      align-items:center;
+      color: white;
+    }
+    
+    .ipad-iphone-img {
+      margin-top: -400px;
+      position: relative;
+      top: 400px;
+    }
+    .primary-btn {
+      background-color: var(--pink);
+      color: white;
+    }
+    .secondary-btn {
+      background-color: var(--pink);
+      color: white;
+    }
+    
+    .about-music {
+      padding-top: 500px;
+      display: grid;
+      place-items: center;
+      gap: 50px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    
+    .video-section {
+      background-image: url(https://img.freepik.com/free-photo/books-imagination-still-life_23-2149082219.jpg?size=626&ext=jpg&ga=GA1.2.1258577565.1659794013&semt=ais);
+      min-height: 800px;
+      display: grid;
+      place-items: center;
+      color: rgb(249, 249, 250);
+      text-align: center;
+    }
+    .video-section .container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-top: -200px;
+    }
+    .hero-section,
+    .video-section {
+      position: relative;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    
+    .gift-section {
+      display: flex;
+      justify-content: center;
+      margin: 100px 0;
+      gap: 50px;
+    }
+    
+    .gift-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .footer-upper {
+      background-color: var(--purple600);
+      padding: 20px;
+    }
+    .footer-upper .container {
+      display: flex;
+      color: white;
+      justify-content: space-between;
+    }
+    
+    .footer-upper h4 {
+      padding-bottom: 10px;
+      border-bottom: 2px solid white;
+      margin-bottom: 10px;
+    }
+    .footer-lower {
+      background-color: var(--purple300);
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      color: white;
+    }
+    
+    .gift-section {
+      scroll-margin: 120px;
+    }</style>
+    
+    
+    <script
+      src="https://kit.fontawesome.com/7a4b62b0a4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo">Achieve Your Goals With...
+          HAPPINESS  </div>
+
+        <ul>
+          <a href="#hero">
+            <li>Overview</li>
+          </a>
+          <a href="#music">
+            <li>Motivation</li>
+          </a>
+          <a href="#video">
+            <li>Success World</li>
+          </a>
+          <a href="#gift">
+            <li>Success Path</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section" id="hero">
+        <div class="container">
+          <h1>My Success</h1>
+          <h3>Your Strength, Ambitions, and  Power make you "STRONG & BOLD".</h3>
+         <h4> <p>Our Happiness is Our Responsibility and No One is Responsible for Your Happiness
+
+            </p></h4>
+            “Take responsibility of your own happiness; never put it in other people’s hands.”
+
+        </div>
+      </section>
+      <section class="music-section" id="music">
+        <div class="container">
+          <h2>
+       <span><iMG src="https://image.emojipng.com/224/11642224.jpg" height="52" width="50"></span>
+            BE CONFIDENT ALWAYS......
+          </h2>
+          <h4>“ Achieved success who has lived well, laughed often, and loved much.
+            Who has enjoyed the trust of pure women, the respect of intelligent men and the love of little children.
+            Who has filled his niche and accomplished his task.
+
+            <P>Who has never lacked appreciation of Earth's beauty or failed to express it.
+            Who has left the world better than he found it,
+            Whether an improved poppy, a perfect poem, or a rescued soul.</P>
+            Who has always looked for the best in others and given them the best he had.
+            Whose life was an inspiration.
+            Whose memory a benediction.”
+            </h4>
+          <button class="primary-btn">Start Your SUCCESS</button>
+
+          <p>
+            HAPPY MIND ALWAYS CREATE NEW THINGS FOR SUCCESS....
+          </p>
+          <div class="ipad-iphone-img">
+            
+            <img src="https://img.freepik.com/premium-vector/you-believe-yourself-motivational-typography_302321-2261.jpg?size=626&ext=jpg&ga=GA1.1.1258577565.1659794013&semt=sph" alt="Motivation"    height="500" width="1250">
+          </div>
+        </div>
+      </section>
+      <section class="about-music container">
+        <h3>“Life is about accepting the challenges along the way, choosing to keep moving forward, and savoring the journey.”</h3>
+        <p>
+          "Take up one idea. Make that one idea your life--think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success."</p>
+        <button class="secondary-btn">Read more</button>
+        <div class="mac-img"> 
+          <EM> <B> LOVE LIFE .. ENJOY EVERY MOMETS OF LIFE </B></EM>
+          <img src="https://img.freepik.com/premium-photo/silhouette-businessman-standing-mountain-top-sunset-twilight-background-with-flag-winner-success-leadership-concept_51195-4041.jpg?size=626&ext=jpg&ga=GA1.1.1258577565.1659794013&semt=sph" alt="macbook" height="550" width="1200" />
+        </div>
+      </section>
+      <section class="video-section" id="video">
+        <div class="container">
+          <h3> World of success. Available ,wherever you are.....</h3>
+          <p>
+            Money can buy a nice home, a great car, fabulous shoes, even a bit of security and some creature comforts, but it cannot fix a broken relationship, or cure loneliness, and the “happiness” it brings is only fleeting and not the kind that really and truly matters. Happiness is not for sale. If you’re expecting the “stuff” you can buy to “make it better,” you will never be happy.</p>
+        </div>
+      </section>
+      <div class="container">
+        <section class="gift-section" id="gift">
+          <div class="gift-card">
+            <img src="https://img.freepik.com/free-vector/business-success-concept-businessman-sort-success-wording_1150-51075.jpg?size=626&ext=jpg&ga=GA1.1.1258577565.1659794013&semt=ais" alt="gift card" />
+          </div>
+          <div class="gift-content">
+            <h3>SUCCESS PATH</h3>
+            <p>
+              “Theres is no shortcut to success”, continuous hard work, guidance and training can enlighten path to success. thesuccesspath.in, one step towards success believes in this philosophy and came into existence.</p>
+            <p>BELIVE IN YOURSELF ....</p>
+            <hr />
+            <div>
+              <button class="secondary-btn">SUCCESS</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <section class="footer-upper">
+        <div class="container">
+          <div class="footer-links">
+            <h4>ENJOY</h4>
+            <ul>
+              <li>*Enjoy the silence</li>
+              <li>*Watch inspirational videos</li>
+              <li>*Feel free to do </li>
+              <li>*Happy</li>
+              
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>LIVE LIFE</h4>
+            <ul>
+              <li>*Be Happy</li>
+              <li>*Live In Present</li>
+              <li>*Enjoy Moments</li>
+              <li>*Encourage </li>
+              
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>GOALS</h4>
+            <ul>
+              <li>*Demonstrate</li>
+              <li>*Achieve</li>
+              <li>*Follow</li>
+              <li>*Keep going on</li>
+            
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>HAPPINESS</h4>
+            <ul>
+              <li>*Keep Trying</li>
+              <li>*Find Positivity</li>
+              <li>*Innovations</li>
+              <li>*Be Active</li>
+              
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="footer-lower">
+        <p>Copyright © 2023 DESIGNED BY - KISHAN GUPTA.... <a href="https://instagram.com/kishan_gupta_sarkar?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"> click here for my instagram</a></p>
+      </section>
+    </footer>
+  </body>
+</html>
